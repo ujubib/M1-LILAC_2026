@@ -931,13 +931,15 @@ Merci !
 **Julien Rabaud**  
 UPPA · *Service Commun de la Documentation* & *Pôle Numérique*
 
+::: {style="text-align:center; margin-top:2rem; line-height:2;"} 
 {{< bi envelope >}} [julien.rabaud@univ-pau.fr](mailto:julien.rabaud@univ-pau.fr)
 
 {{< bi linkedin >}} [linkedin.com/in/julien-rabaud](https://www.linkedin.com/in/julien-rabaud-6b037110/)
 
 {{< bi mastodon >}} [\@UjuBib\@mamot.fr](https://mamot.fr/@UjuBib)
 :::
+:::
 
-::: {style="text-align:center; font-size:0.65em; color:#888; margin-top:4rem; border-top:1px gray"}
+::: {style="text-align:center; font-size:0.65em; color:#888; margin-top:4rem; border-top:1px solid #888; border-bottom:1px solid #888"}
 Présentation réalisée avec [Quarto](https://quarto.org) & [reveal.js](https://revealjs.com) · Licence CC BY 4.0
 :::
