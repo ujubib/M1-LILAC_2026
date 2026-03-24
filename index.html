@@ -233,7 +233,6 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 <li>Collège : Allemand, Anglais, Latin, Grec</li>
 <li>Bac ES - CPGE Commerce - IEPG</li>
 <li><i class="bi-book " style="" role="img" aria-hidden="true"></i> <strong>DUT info-com option Métiers du livre</strong> — Université de la Méditerranée / IUT d’Aix-en-Provence</li>
-<li>Spécialisation en <strong>humanités numériques</strong></li>
 <li><i class="bi-search " style="" role="img" aria-hidden="true"></i> Curiosité</li>
 </ul>
 <h3 id="postes">Postes</h3>
@@ -308,6 +307,25 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 <ul>
 <li>Christophe Masutti : <a href="https://libruniv-c29483.frama.io/">Guide pratique d’artisanat numérique à l’Université</a></li>
 </ul>
+</section>
+<section id="les-principes-fair" class="slide level2 center">
+<h2>Les principes <strong><em>FAIR</em></strong></h2>
+</section>
+<section id="le-cycle-des-données-numériques" class="slide level2 center">
+<h2>Le cycle des données numériques</h2>
+
+<img data-src="img/data-lifecycle.png" style="width:70.0%" class="r-stretch quarto-figure-center"><p class="caption">Source: <a href="https://callisto-formation.fr/course/section.php?id=4642">Callisto</a></p></section>
+<section id="fair-open" class="slide level2 center">
+<h2>FAIR / OPEN</h2>
+
+<img data-src=".\img/FAIR-OPEN.webp" class="r-stretch quarto-figure-center"><p class="caption">Image source : <a href="https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR">Consortium of European Social Science Data Archives</a> (CESSDA)</p></section>
+<section id="fair-care" class="slide level2 center">
+<h2>FAIR / CARE</h2>
+
+<img data-src="img/FAIR-CARE.webp" class="r-stretch quarto-figure-center"><p class="caption">Image source : <a href="https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR">Consortium of European Social Science Data Archives</a> (CESSDA)</p></section>
+<section id="care" class="slide level2 center">
+<h2>CARE</h2>
+<p>The CARE principles for Indigenous Data Governance (Collective benefit, Authority to control, Responsibility, and Ethics) specifically concern Indigenous data and govern the control and (re)use of such data under the principles of open science (Carroll et al.&nbsp;2020). For instance, the <strong>Collective Benefit</strong> principle states that data ecosystems should be designed and function in ways that enable Indigenous Peoples to derive benefit from the data, e.g.&nbsp;for improved government and citizen engagement. The CARE principles are complementary to the FAIR principles, under the motto ‘be FAIR and CARE’ (Carroll et al.&nbsp;2020).</p>
 </section></section>
 <section>
 <section id="formats" class="title-slide slide level1 center" data-background-color="#2297D4">
@@ -325,22 +343,28 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 <span id="cb1-3"><a href="" aria-hidden="true" tabindex="-1"></a>Un paragraphe avec du **gras**</span>
 <span id="cb1-4"><a href="" aria-hidden="true" tabindex="-1"></a>et de l'*italique*.</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <blockquote>
-<p><code>.txt</code> · <code>.md</code> · <code>.csv</code> · <code>.html</code> · <code>.xml</code></p>
+<p><code>.txt</code> <code>.md</code> <code>.csv</code> <code>.html</code> <code>.xml</code> <code>.svg</code></p>
 </blockquote>
 <p><i class="bi-check-circle-fill " style="" role="img" aria-hidden="true"></i> Versionables · pérennes · ouverts</p>
 </div><div class="column" style="width:50%;">
 <h3 id="fichiers-binaires">Fichiers <strong>binaires</strong></h3>
 <p>Nécessitent un logiciel dédié</p>
-<pre><code>PK\x03\x04\x14\x00\x00\x00\x08\x00
+<pre><code> 
+PK\x03\x04\x14\x00\x00\x00\x08\x00
+
 [illisible sans Word / LibreOffice]</code></pre>
 <blockquote>
-<p><code>.docx</code> · <code>.xlsx</code> · <code>.pdf</code> · <code>.jpg</code> · <code>.mp3</code></p>
+<p><code>.docx</code> <code>.xlsx</code> <code>.pdf</code> <code>.jpg</code> <code>.mp3</code></p>
 </blockquote>
 <p><i class="bi-exclamation-triangle-fill " style="" role="img" aria-hidden="true"></i> Dépendance applicative · moins pérennes</p>
 </div></div>
+<blockquote>
+
 <ul>
 <li>Cours d’Arthur Perret : <a href="https://www.arthurperret.fr/cours/format-texte.html">Format texte</a> · <a href="https://www.arthurperret.fr/cours/markdown.html">Markdown</a> · <a href="https://www.arthurperret.fr/cours/pandoc.html">Pandoc</a> · <a href="https://www.arthurperret.fr/cours/ecriture-scientifique-format-texte.html">écriture scientifique au format texte</a></li>
 </ul>
+
+</blockquote>
 <div class="callout callout-tip callout-style-simple">
 <div class="callout-body">
 <div class="callout-icon-container">
@@ -477,7 +501,8 @@ Schmidt,Hans,de</code></pre>
 <span id="cb8-2"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">'click'</span><span class="op">,</span> </span>
 <span id="cb8-3"><a href="" aria-hidden="true" tabindex="-1"></a>  () <span class="kw">=&gt;</span> {</span>
 <span id="cb8-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="fu">alert</span>(<span class="st">'Clic !'</span>)<span class="op">;</span></span>
-<span id="cb8-5"><a href="" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb8-5"><a href="" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb8-6"><a href="" aria-hidden="true" tabindex="-1"></a>   </span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <blockquote>
 <p>Interactivité, dynamisme</p>
 </blockquote>
@@ -556,7 +581,7 @@ Schmidt,Hans,de</code></pre>
 <li>Une base légale (consentement, intérêt public…)</li>
 <li>Information des personnes concernées</li>
 <li>Souvent un avis du <strong>comité d’éthique</strong> / déclaration <strong>CNIL</strong></li>
-<li><a href="https://organisation.univ-pau.fr/fr/mentions-legales/donnees-personnelles.html">Données à caractère personnel à l’UPPA</a></li>
+<li><a href="https://organisation.univ-pau.fr/fr/mentions-legales/donnees-personnelles.html"><i class="bi-check-circle-fill " style="" role="img" aria-hidden="true"></i> Données à caractère personnel à l’UPPA</a></li>
 </ul>
 </div>
 </div>
@@ -695,7 +720,7 @@ Schmidt,Hans,de</code></pre>
 <div class="columns">
 <div class="column" style="width:25%;">
 <h3 id="idref">IDREF</h3>
-<p>Référentiel français des autorités</p>
+<p>Référentiel des autorités du SUDOC (Abes)</p>
 <p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://www.idref.fr">idref.fr</a></p>
 <p>Personnes, organisations, lieux, sujets</p>
 <p><code>068231830</code></p>
@@ -716,7 +741,9 @@ Schmidt,Hans,de</code></pre>
 <p>Research Organization Registry</p>
 <p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://ror.org">ror.org</a></p>
 <p>Institutions</p>
-<p><code>02feahw73</code></p>
+<p><code>00z51kw68</code><br>
+ALTER :<br>
+<a href="https://ror.org/00z51kw68" class="uri">https://ror.org/00z51kw68</a></p>
 </div></div>
 <div class="callout callout-note callout-style-simple">
 <div class="callout-body">
@@ -1005,7 +1032,9 @@ Schmidt,Hans,de</code></pre>
 </div>
 </div>
 </div>
+<blockquote>
 <p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://chromobase.huma-num.fr/">chromobase.huma-num.fr</a></p>
+</blockquote>
 </div></div>
 </section>
 <section id="gallicagram" class="slide level2 center">
@@ -1027,7 +1056,6 @@ Schmidt,Hans,de</code></pre>
 <li>Comparer plusieurs termes ou langues</li>
 <li>Cliquer sur un point → accès direct aux textes sources dans Gallica</li>
 </ul>
-<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://www.gallicagram.com">gallicagram.com</a></p>
 </div><div class="column" style="width:40%;">
 <h3 id="vs.-google-ngram-viewer">Vs. Google Ngram Viewer</h3>
 <div class="callout callout-note callout-style-simple">
@@ -1075,13 +1103,16 @@ Schmidt,Hans,de</code></pre>
 </div>
 </div>
 </div>
-<p><strong>Pour LILAC</strong> : histoire de la langue, circulation des idées, études de presse.</p>
+<blockquote>
+<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://www.gallicagram.com">gallicagram.com</a></p>
+</blockquote>
 </div></div>
 </section>
 <section id="hyperbase-web" class="slide level2 smaller center">
 <h2>Hyperbase Web</h2>
 <blockquote>
 <p>Une plateforme d’<strong>analyse de données textuelles</strong> (ADT) — statistique et exploration de corpus littéraires, linguistiques, historiques.</p>
+<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://hyperbase.unice.fr">hyperbase.unice.fr</a> · DOI : <a href="https://doi.org/10.4000/corpus.8770">10.4000/corpus.8770</a></p>
 </blockquote>
 <div class="columns">
 <div class="column" style="width:60%;">
@@ -1099,7 +1130,6 @@ Schmidt,Hans,de</code></pre>
 <li><strong>AFC</strong> (Analyse Factorielle des Correspondances) &amp; <strong>analyse arborée</strong></li>
 <li>Distance intertextuelle</li>
 </ul>
-<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://hyperbase.unice.fr">hyperbase.unice.fr</a> · DOI : <a href="https://doi.org/10.4000/corpus.8770">10.4000/corpus.8770</a></p>
 </div><div class="column" style="width:40%;">
 <h3 id="en-pratique">En pratique</h3>
 <ul>
@@ -1123,6 +1153,7 @@ Schmidt,Hans,de</code></pre>
 <h2>Stylo</h2>
 <blockquote>
 <p>Un <strong>éditeur de texte sémantique</strong> pour les auteur·rices en SHS.</p>
+<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://stylo.huma-num.fr">stylo.huma-num.fr</a></p>
 </blockquote>
 <div class="columns">
 <div class="column" style="width:60%;">
@@ -1137,7 +1168,6 @@ Schmidt,Hans,de</code></pre>
 BibTeX      →  Références bibliographiques
 YAML        →  Métadonnées (auteur, mots-clés…)</code></pre>
 <p>→ Exports : <strong>HTML, PDF, LaTeX, XML-TEI, DOCX</strong></p>
-<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://stylo.huma-num.fr">stylo.huma-num.fr</a></p>
 </div><div class="column" style="width:40%;">
 <h3 id="stylo-incarne-tout-ce-quon-a-vu">Stylo incarne tout ce qu’on a vu</h3>
 <div class="callout callout-important callout-style-simple">
@@ -1210,6 +1240,12 @@ YAML        →  Métadonnées (auteur, mots-clés…)</code></pre>
 </ul>
 </div><div class="column" style="width:50%;">
 <h3 id="lectures">Lectures</h3>
+<div class="callout callout-tip callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
 <ul>
 <li>Christophe Masutti : <a href="https://libruniv-c29483.frama.io/">Guide pratique d’artisanat numérique à l’Université</a></li>
 <li><a href="https://www.arthurperret.fr/cours/">Les cours d’Arthur Perret</a></li>
@@ -1217,6 +1253,9 @@ YAML        →  Métadonnées (auteur, mots-clés…)</code></pre>
 <li>Julien Bidoret (ESAD Pyrénées) : <a href="https://radicalweb.design/ressources/">Pages <em>Ressources</em> de <em>Radical Web Design</em></a></li>
 <li><a href="https://julie-blanc.fr/">Page personnelle de Julie Blanc</a> (développeuse de <em>paged.js</em>, designeuse de <em>Chromobase</em>)</li>
 </ul>
+</div>
+</div>
+</div>
 </div></div>
 </section>
 <section id="section" class="slide level2 center">
@@ -1231,7 +1270,7 @@ UPPA · <em>Service Commun de la Documentation</em> &amp; <em>Pôle Numérique</
 <p><i class="bi-linkedin " style="" role="img" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/julien-rabaud-6b037110/">linkedin.com/in/julien-rabaud</a></p>
 <p><i class="bi-mastodon " style="" role="img" aria-hidden="true"></i> <a href="https://mamot.fr/@UjuBib">@UjuBib@mamot.fr</a></p>
 </div>
-<div style="text-align:center; font-size:0.65em; color:#888; margin-top:2rem;">
+<div style="text-align:center; font-size:0.65em; color:#888; margin-top:4rem; border-top:1px gray">
 <p>Présentation réalisée avec <a href="https://quarto.org">Quarto</a> &amp; <a href="https://revealjs.com">reveal.js</a> · Licence CC BY 4.0</p>
 </div>
 
