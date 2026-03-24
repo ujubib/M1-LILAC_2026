@@ -1,0 +1,190 @@
+/*-- scss:defaults --*/
+
+// Fonts — Bunny Fonts (mêmes sources que _brand.yml)
+@import url('https://fonts.bunny.net/css?family=amaranth:400,400i,700,700i|arsenal:400,400i,700,700i|b612-mono:400,700');
+
+// Couleurs UPPA
+$primary:   #003D7A;
+$secondary: #2297D4;
+$success:   #27AE60;
+$info:      #3498DB;
+$warning:   #F39C12;
+$danger:    #981b3e;
+
+// Fond et texte
+$body-bg:    floralwhite;
+$body-color: #1a1a1a;
+
+// Typographie
+$headings-font-family:  'Amaranth', sans-serif;
+$font-family-base:      'Arsenal', sans-serif;
+$font-family-monospace: 'B612 Mono', monospace;
+
+// Espacement
+$spacer: 1rem;
+
+/*-- scss:rules --*/
+
+// ── Reveal — base ──────────────────────────────────────────
+.reveal {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 1.65rem;
+  background-color: floralwhite;
+  color: #1a1a1a;
+}
+
+// ── Titres ─────────────────────────────────────────────────
+.reveal h1, .reveal h2,
+.reveal h3, .reveal h4 {
+  font-family: 'Amaranth', sans-serif;
+  text-transform: none;
+  text-shadow: none;
+  line-height: 1.2;
+}
+
+.reveal h1 { color: #981b3e; font-size: 2em; }
+
+.reveal h2 {
+  color: steelblue;
+  font-size: 1.4em;
+  border-bottom: 3px solid #2297D4;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.8em;
+}
+
+.reveal h3 { color: mediumvioletred; font-size: 1.05em; }
+.reveal h4  { color: #981b3e; font-size: 0.95em; }
+
+// ── Slides de section (fonds colorés) ──────────────────────
+.reveal section[data-background-color="#003D7A"],
+.reveal section[data-background-color="#003865"] {
+  color: #f5f0e8;
+}
+.reveal section[data-background-color="#003D7A"] h1,
+.reveal section[data-background-color="#003D7A"] h2,
+.reveal section[data-background-color="#003D7A"] h3,
+.reveal section[data-background-color="#003865"] h1,
+.reveal section[data-background-color="#003865"] h2,
+.reveal section[data-background-color="#003865"] h3 {
+  color: #ffffff;
+  border-color: rgba(255,255,255,0.3);
+}
+
+.reveal section[data-background-color="#2297D4"] {
+  color: #fff;
+}
+.reveal section[data-background-color="#2297D4"] h1,
+.reveal section[data-background-color="#2297D4"] h2,
+.reveal section[data-background-color="#2297D4"] h3 {
+  color: #ffffff;
+  border-color: rgba(255,255,255,0.4);
+}
+
+// ── Code ───────────────────────────────────────────────────
+.reveal pre {
+  border-left: 4px solid #003D7A;
+  background-color: #f8f5ee;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  font-size: 0.72em;
+}
+
+.reveal code {
+  font-family: 'B612 Mono', monospace;
+  background: rgba(0, 61, 122, 0.08);
+  color: #003D7A;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  font-size: 0.88em;
+}
+
+.reveal pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+// ── Tableaux ───────────────────────────────────────────────
+.reveal table {
+  font-size: 1.3rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.reveal table thead {
+  background-color: #003D7A;
+  color: white;
+}
+
+.reveal table th {
+  padding: 0.5em 0.8em;
+  text-align: left;
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 700;
+}
+
+.reveal table td {
+  padding: 0.4em 0.8em;
+  border-bottom: 1px solid #e0d9ce;
+}
+
+.reveal table tbody tr:nth-child(even) td {
+  background-color: rgba(0, 61, 122, 0.05);
+}
+
+// ── Callouts ───────────────────────────────────────────────
+.reveal .callout {
+  border-radius: 6px;
+  font-size: 0.85em;
+  margin: 0.8em 0;
+  border-left-width: 5px;
+}
+
+.reveal .callout-note      { border-left-color: #3498DB; }
+.reveal .callout-tip       { border-left-color: #27AE60; }
+.reveal .callout-warning   { border-left-color: #F39C12; }
+.reveal .callout-important { border-left-color: #981b3e; }
+
+// ── Blockquote ─────────────────────────────────────────────
+.reveal blockquote {
+  border-left: 4px solid #2297D4;
+  background: rgba(34, 151, 212, 0.07);
+  padding: 0.6em 1em;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: #334155;
+  box-shadow: none;
+}
+
+// ── Liens ──────────────────────────────────────────────────
+.reveal a { color: #003D7A; text-decoration: none; }
+.reveal a:hover { color: #2297D4; text-decoration: underline; }
+
+// ── Footer & numéro de slide ───────────────────────────────
+.reveal .footer {
+  font-size: 0.55em;
+  font-family: 'Arsenal', sans-serif;
+  color: #666;
+}
+
+.reveal .slide-number {
+  font-family: 'B612 Mono', monospace;
+  font-size: 0.65em;
+  background: transparent;
+  color: #888;
+}
+
+// ── Progress bar ───────────────────────────────────────────
+.reveal .progress { height: 4px; color: #2297D4; }
+
+// ── Logo auto-injecté par _brand.yml — masqué ─────────────
+.reveal .slide-logo { display: none !important; }
+
+// ── Title slide — subtitle ─────────────────────────────────
+.reveal .title-slide .subtitle,
+.reveal #title-slide .subtitle {
+  font-family: 'Amaranth', sans-serif;
+  font-style: italic;
+  font-size: 1.8em;
+  color: #981b3e;
+}

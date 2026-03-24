@@ -1,0 +1,909 @@
+---
+title: "Humanités numériques & Culture numérique"
+subtitle: "Master 1 LILAC — Langues et civilisations"
+author:
+  - name: Julien Rabaud
+    orcid: 0000-0002-6604-9777
+    affiliations:
+      - name: "**SCD** - *Responsable Bibliothèque de Recherche Mathématiques appliquées*"
+        url: https://bibliotheques.univ-pau.fr/fr/infos-pratiques/pau/bibliotheque-de-recherche-mathematiques-appliquees-ipra.html
+      - name: "**CSP Numérique Recherche** - *Gestion des données de la recherche*"
+        url: https://recherche.univ-pau.fr/fr/science-ouverte/donnees-de-la-recherche.html
+date: 2026-03-24
+date-format: "D MMMM YYYY"
+lang: fr
+
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    logo: ""
+    slide-number: c/t
+    chalkboard:
+      buttons: true
+    preview-links: auto
+    footer: '<img src="img/logoUPPA-RepFr.png" style="height:28px; vertical-align:middle; margin-right:12px;"> UPPA · Master 1 LILAC — <em>Culture numérique & Humanités numériques</em>'
+    transition: slide
+    background-transition: fade
+    progress: true
+    controls: true
+    controls-layout: bottom-right
+    smaller: false
+    center: true
+    highlight-style: github
+    code-line-numbers: false
+    code-copy: true
+    link-external-newwindow: true
+    width: 1280
+    height: 720
+    margin: 0.1
+    output-file: index.html
+---
+
+# Présentation {background-color="#003D7A"}
+
+*Qui suis-je ?*
+
+---
+
+## Mon parcours
+
+::: {.columns}
+::: {.column width="60%"}
+
+### Formation
+
+- **DUT info-com option Métiers du livre** — Université de la Méditerranée / IUT d'Aix-en-Provence
+- {{< bi book >}} Spécialisation en **humanités numériques**
+- {{< bi search >}} Thématiques : **[vos axes de recherche]**
+
+### Postes
+
+- **[Poste actuel]** — Institution, depuis AAAA
+- **[Poste précédent]** — Institution, AAAA–AAAA
+
+:::
+::: {.column width="40%"}
+
+::: {.callout-note appearance="simple"}
+### Aujourd'hui
+
+2h sur la **culture numérique** et les infrastructures de la recherche en SHS.
+
+N'hésitez pas à poser vos questions au fil de la séance !
+:::
+
+:::
+:::
+
+---
+
+## Au programme
+
+::: {.columns}
+::: {.column width="50%"}
+**Culture numérique**
+
+1. Formats — texte, binaire, sérialisation
+2. Standards du web — HTML, CSS, JS · accessibilité · RGPD
+3. Web sémantique — triplets, PID
+:::
+::: {.column width="50%"}
+**Huma-Num & projets**
+
+4. Huma-Num — consortiums, services, SSH Open Marketplace
+5. Quelques projets — Vikus Viewer, Chromobase, Stylo
+:::
+:::
+
+# Culture numérique {background-color="#003D7A"}
+
+*Pourquoi ça nous concerne ?*
+
+---
+
+## Pourquoi parler de culture numérique ?
+
+En tant que chercheur·se en langues et civilisations, vous serez amené·e à :
+
+- **Collecter** des données (textes, images, sons, corpus)
+- **Stocker** et partager vos sources
+- **Publier** vos résultats en ligne
+- **Collaborer** avec d'autres équipes, souvent à distance
+
+::: {.callout-important appearance="simple"}
+### Le numérique n'est pas neutre
+Chaque choix technique a des **implications épistémologiques**, **politiques** et **éthiques** : quoi garder, comment décrire, qui peut accéder.
+
+→ La recherche s'est dotée d'un cadre commun pour y répondre : les principes **FAIR**
+*(Findable · Accessible · Interoperable · Reusable)*
+:::
+
+# Formats {background-color="#2297D4"}
+
+---
+
+## Texte vs. Binaire
+
+::: {.columns}
+::: {.column width="50%"}
+### Fichiers **texte**
+Lisibles dans n'importe quel éditeur
+
+```markdown
+# Mon titre
+
+Un paragraphe avec du **gras**
+et de l'*italique*.
+```
+
+> `.txt` · `.md` · `.csv` · `.html` · `.xml`
+
+{{< bi check-circle-fill >}} Versionables · pérennes · ouverts
+:::
+::: {.column width="50%"}
+### Fichiers **binaires**
+Nécessitent un logiciel dédié
+
+```
+PK\x03\x04\x14\x00\x00\x00\x08\x00
+[illisible sans Word / LibreOffice]
+```
+
+> `.docx` · `.xlsx` · `.pdf` · `.jpg` · `.mp3`
+
+{{< bi exclamation-triangle-fill >}} Dépendance applicative · moins pérennes
+:::
+:::
+
+::: {.callout-tip appearance="simple"}
+**Bonne pratique** : travailler en format texte, exporter en binaire pour la diffusion.
+:::
+
+---
+
+## Formats propriétaires vs. Ouverts
+
+| Critère | Propriétaire | Ouvert |
+|---|---|---|
+| Licence | Restrictive (éditeur) | Libre (communauté) |
+| Spécification | Secrète ou partielle | Publique et documentée |
+| Pérennité | Dépend de l'éditeur | Garantie par la spec |
+| Exemples | `.docx` (Microsoft) | `.odt` (ISO 26300) |
+| Bases de données | MS SQL Server, Oracle | PostgreSQL, SQLite |
+
+::: {.callout-warning appearance="simple"}
+En recherche : préférer des formats **ouverts** pour assurer la reproductibilité et la longévité des données.
+
+→ Condition nécessaire pour des données **Interopérables** et **Réutilisables** (principes FAIR *I* et *R*).
+:::
+
+---
+
+## Sérialisation des données
+
+> Transformer des données structurées en un format **transportable et stockable**.
+
+::: {.columns}
+::: {.column width="33%"}
+### CSV
+Simple, tabulaire
+
+```csv
+nom,prénom,langue
+Dupont,Alice,fr
+Schmidt,Hans,de
+```
+
+{{< bi check-circle-fill >}} Excel, R, Python  
+{{< bi exclamation-triangle-fill >}} Pas de hiérarchie
+:::
+::: {.column width="33%"}
+### JSON
+Hiérarchique, web-natif
+
+```json
+{
+  "auteur": {
+    "nom": "Dupont",
+    "langues": ["fr","en"]
+  }
+}
+```
+
+{{< bi check-circle-fill >}} APIs, JavaScript  
+{{< bi exclamation-triangle-fill >}} Moins lisible
+:::
+::: {.column width="33%"}
+### XML
+Structuré, annoté
+
+```xml
+<auteur>
+  <nom>Dupont</nom>
+  <langue>fr</langue>
+</auteur>
+```
+
+{{< bi check-circle-fill >}} TEI, Dublin Core  
+{{< bi exclamation-triangle-fill >}} Verbeux
+:::
+:::
+
+# Standards du web {background-color="#2297D4"}
+
+---
+
+## HTML, CSS, JavaScript
+
+::: {.columns}
+::: {.column width="33%"}
+### HTML — la structure
+
+```html
+<article>
+  <h1>Mon texte</h1>
+  <p>Un paragraphe
+    <strong>important</strong>.
+  </p>
+</article>
+```
+
+> Sémantique, balisage, contenu
+:::
+::: {.column width="33%"}
+### CSS — la présentation
+
+```css
+article {
+  font-family: serif;
+  color: #333;
+  max-width: 70ch;
+}
+h1 { color: navy; }
+```
+
+> Style, mise en page, couleurs
+:::
+::: {.column width="33%"}
+### JavaScript — le comportement
+
+```javascript
+document.querySelector('h1')
+  .addEventListener('click', () => {
+    alert('Clic !');
+  });
+```
+
+> Interactivité, dynamisme
+:::
+:::
+
+::: {.callout-note appearance="simple"}
+Ces trois langages forment le **socle du web**. Ils sont standardisés par le [W3C](https://www.w3.org/).
+:::
+
+---
+
+## Accessibilité (a11y)
+
+> Rendre le web utilisable **par toutes et tous**, quelle que soit la situation de handicap ou le dispositif.
+
+::: {.columns}
+::: {.column width="55%"}
+### Principes WCAG (W3C)
+
+- **Perceptible** : alternatives textuelles (`alt`)
+- **Utilisable** : navigation au clavier
+- **Compréhensible** : langue déclarée, langage clair
+- **Robuste** : compatibilité avec les lecteurs d'écran
+
+```html
+<!-- ❌ Mauvais -->
+<img src="graphique.png"/>
+
+<!-- ✅ Bon -->
+<img src="graphique.png"
+  alt="Évolution des publications 2010-2024"/>
+```
+:::
+::: {.column width="45%"}
+::: {.callout-important appearance="simple"}
+### Obligation légale (France)
+Le **RGAA** s'applique aux services publics numériques.
+
+Niveau attendu : **AA** (WCAG 2.1)
+:::
+:::
+:::
+
+---
+
+## RGPD — Données personnelles
+
+::: {.columns}
+::: {.column width="55%"}
+### 6 principes fondamentaux
+
+1. Licéité, loyauté, transparence
+2. Limitation des finalités
+3. Minimisation des données
+4. Exactitude
+5. Limitation de la conservation
+6. Intégrité et confidentialité
+
+:::
+::: {.column width="45%"}
+### Impact sur la recherche
+
+::: {.callout-warning appearance="simple"}
+Toute collecte de données sur des **personnes identifiables** nécessite\ :
+
+- Une base légale (consentement, intérêt public…)
+- Information des personnes concernées
+- Souvent un avis du **comité d'éthique** / déclaration **CNIL**
+- [Données à caractère personnel à l'UPPA](https://organisation.univ-pau.fr/fr/mentions-legales/donnees-personnelles.html)
+:::
+:::
+:::
+
+# Web sémantique {background-color="#003D7A"}
+
+*Du web de documents au web de données*
+
+---
+
+## Le web de données
+
+::: {.columns}
+::: {.column width="50%"}
+### Web actuel (syntaxique)
+
+```html
+<p>Victor Hugo est né à
+   Besançon en 1802.</p>
+```
+
+→ Un humain comprend, pas une machine.
+:::
+::: {.column width="50%"}
+### Web sémantique (RDF)
+
+```turtle
+<hugo> a foaf:Person ;
+  schema:birthPlace <besançon> ;
+  schema:birthDate "1802-02-26" .
+```
+
+→ Une machine peut raisonner.
+:::
+:::
+
+::: {.callout-note appearance="simple"}
+Initié par **Tim Berners-Lee** (W3C) dès 2001 sous le nom de *Linked Data*.
+:::
+
+---
+
+## Les triplets RDF
+
+> Toute information se décompose en **Sujet → Prédicat → Objet**
+
+```
+<Victor_Hugo>   <est né à>   <Besançon>
+    SUJET          PRÉDICAT      OBJET
+```
+
+::: {.columns}
+::: {.column width="50%"}
+| Composant | Rôle | Exemple |
+|---|---|---|
+| Sujet | L'entité décrite | Victor Hugo |
+| Prédicat | La relation | `dbo:birthPlace` |
+| Objet | La valeur | Besançon / `"1802"` |
+
+:::
+::: {.column width="50%"}
+- Sujets et prédicats sont des **URI** (identifiants web)
+- Les objets peuvent être des URI ou des **littéraux**
+- On constitue ainsi un **graphe de connaissances**
+
+::: {.callout-tip appearance="simple"}
+**SPARQL** est le langage de requête de ces graphes (≈ SQL du web sémantique).
+:::
+:::
+:::
+
+---
+
+## Identifiants pérennes (PID)
+
+> Un **Persistent Identifier** est unique et stable — il survit aux changements d'URL.
+
+Les PID sont au cœur des principes **FAIR** :
+
+| Principe | Signification | Rôle du PID |
+|---|---|---|
+| **F**indable | Facile à trouver | Identifiant unique dans les moteurs et catalogues |
+| **A**ccessible | Accessible | URL stable, protocole ouvert (HTTP, OAI-PMH) |
+| **I**nteroperable | Interopérable | URI commun entre bases de données différentes |
+| **R**eusable | Réutilisable | Traçabilité de la provenance et de la licence |
+
+## PID - exemples
+
+::: {.columns}
+::: {.column width="25%"}
+### IDREF
+Référentiel français des autorités
+
+{{< bi link-45deg >}} [idref.fr](https://www.idref.fr)
+
+Personnes, organisations, lieux, sujets
+
+`068231830`
+:::
+::: {.column width="25%"}
+### DOI
+Digital Object Identifier
+
+{{< bi link-45deg >}} [doi.org](https://doi.org)
+
+Articles, livres, jeux de données
+
+`10.xxxx/xxxxx`
+:::
+::: {.column width="25%"}
+### ORCID
+Open Researcher & Contributor ID
+
+{{< bi link-45deg >}} [orcid.org](https://orcid.org)
+
+Chercheur·ses
+
+`0000-0002-…`
+:::
+::: {.column width="25%"}
+### ROR
+Research Organization Registry
+
+{{< bi link-45deg >}} [ror.org](https://ror.org)
+
+Institutions
+
+`02feahw73`
+:::
+:::
+
+::: {.callout-note appearance="simple"}
+Ces identifiants sont les **briques de base** de la science ouverte et du web sémantique en recherche.
+:::
+
+# Huma-Num {background-color="#003D7A"}
+
+*L'infrastructure nationale des SHS*
+
+---
+
+## Qu'est-ce qu'Huma-Num ?
+
+::: {.columns}
+::: {.column width="60%"}
+**Huma-Num** est une **Infrastructure de Recherche *étoile* (IR\*)** dédiée aux Sciences Humaines et Sociales.
+
+- Créée en **2013**, labellisée TGIR en 2016 (IR\* en 2023)
+- Sous tutelle CNRS · EHESS · Aix-Marseille Université
+- Nœud français de **DARIAH** (réseau européen)
+- Interconnectée avec **CLARIN** (linguistique)
+
+### Mission
+> Faciliter la production, le traitement, la préservation et la diffusion des données numériques en SHS.
+:::
+::: {.column width="40%"}
+::: {.callout-note appearance="simple"}
+### Chiffres clés
+- **60+** consortiums et réseaux
+- **100+** outils et services
+- Des milliers de chercheur·ses utilisateurs
+
+Tous les services sont conçus pour produire des données **FAIR**.
+{{< bi link-45deg >}} [go-fair.org/fair-principles](https://www.go-fair.org/fair-principles/)
+:::
+:::
+:::
+
+---
+
+## Les consortiums
+
+> Regroupent chercheur·ses, ingénieur·es et archivistes autour de **pratiques et standards communs** par domaine.
+
+::: {.columns}
+::: {.column width="55%"}
+### Consortiums actifs (sélection)
+
+| Consortium | Domaine |
+|---|---|
+| **pictorIA** | Corpus visuels & IA (computer vision) |
+| **ARIANE** | IA & éditions savantes numériques |
+| **CORLI 2** | Corpus de langue (oral, écrit, multimodal) |
+| **MASAplus** | Données archéologiques & LOD |
+| **DISTAM** | Études orientales, africaines & asiatiques |
+| **CANEVAS** | Annotation & archivage vidéo |
+| **MUSICA 2** | Encodage et interopérabilité musicale |
+| **3DHN** | Données 3D en SHS et patrimoine |
+| **PTM** | Humanités spatiales & données géohistoriques |
+
+:::
+::: {.column width="45%"}
+### Rôle
+
+- Définir des **standards** et bonnes pratiques
+- Mutualiser les **outils** et livrables
+- Assurer **formation** et documentation
+- Favoriser le **dépôt FAIR** des données
+
+::: {.callout-tip appearance="simple"}
+Maximum **12 consortiums actifs** simultanément · labellisés pour 4 ans.
+
+{{< bi link-45deg >}} [huma-num.fr/les-consortiums-hn](https://www.huma-num.fr/les-consortiums-hn/)
+:::
+:::
+:::
+
+---
+
+## Les services Huma-Num
+
+::: {.callout-note appearance="simple"}
+Tous les services sont documentés sur {{< bi book-open >}} [documentation.huma-num.fr](https://documentation.huma-num.fr) · Accès centralisé via **HumanID** : [humanid.huma-num.fr](https://humanid.huma-num.fr)
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+### Données & stockage
+
+- **Nakala** — dépôt, diffusion, identifiants ARK · FAIR-compliant · connecté à l'EOSC {{< bi link-45deg >}} [nakala.fr](https://nakala.fr)
+- **Huma-Num Box** — stockage froid/chaud, multi-sites
+- **COCOON** — corpus oraux & multimodaux {{< bi link-45deg >}} [cocoon.huma-num.fr](https://cocoon.huma-num.fr)
+- **CINES** — archivage pérenne
+
+### Découverte & publication
+
+- **Isidore** — moteur de recherche SHS {{< bi link-45deg >}} [isidore.science](https://isidore.science)
+- **Stylo** — éditeur sémantique {{< bi link-45deg >}} [stylo.huma-num.fr](https://stylo.huma-num.fr)
+- **Nakala-Press** — sites web depuis une collection Nakala
+:::
+::: {.column width="50%"}
+### Traitement (via ShareDocs)
+
+- **Abbyy / Tesseract** — OCR
+- **Whisper** — transcription audio/vidéo (avec diarisation)
+- **FFmpeg** — transcodage audio/vidéo
+
+### Outils collaboratifs & analyse
+
+- **ShareDocs** — gestionnaire de fichiers sécurisé
+- **GitLab** {{< bi link-45deg >}} [gitlab.huma-num.fr](https://gitlab.huma-num.fr)
+- **Heurist** — bases de données relationnelles SHS
+- **TXM** — analyse textométrique
+- **OpenTheso** — gestion de thésaurus (SKOS/LOD)
+- **Mattermost · Kanboard** — messagerie & gestion de projet
+:::
+:::
+
+---
+
+## SSH Open Marketplace
+
+> Un catalogue de **ressources pour les humanités numériques** : outils, données, workflows, formations, publications.
+
+::: {.columns}
+::: {.column width="60%"}
+### Qu'est-ce qu'on y trouve ?
+
+- **Outils** : logiciels, plateformes, APIs
+- **Jeux de données** : corpus, bases de données ouvertes
+- **Workflows** : pipelines méthodologiques documentés
+- **Formations** : tutoriels, écoles d'été, MOOC
+
+### Accès
+{{< bi link-45deg >}} [marketplace.sshopencloud.eu](https://marketplace.sshopencloud.eu)
+
+Géré par **SSHOC** (H2020), intégré à DARIAH/CLARIN.
+:::
+::: {.column width="40%"}
+::: {.callout-tip appearance="simple"}
+### Pour vous
+C'est **le premier endroit à consulter** lorsque vous cherchez un outil pour un projet de recherche en SHS.
+
+Cherchez par : discipline · type de données · méthode.
+:::
+:::
+:::
+
+# Quelques projets {background-color="#003D7A"}
+
+---
+
+## Vikus Viewer
+
+> Exploration visuelle de **collections patrimoniales** à grande échelle.
+
+::: {.columns}
+::: {.column width="60%"}
+### Présentation
+
+- Développé par le **FH Potsdam** (Urban Complexity Lab)
+- Visualisation de **milliers d'objets** sur une ligne du temps
+- Navigation fluide, zoom sémantique
+- Basé sur **PIXI.js** (WebGL) — tourne dans le navigateur
+
+Les objets sont positionnés selon :
+
+- L'axe temporel (date de création)
+- Des regroupements thématiques (mots-clés, collections)
+
+{{< bi link-45deg >}} [vikusviewer.fh-potsdam.de](https://vikusviewer.fh-potsdam.de)
+:::
+::: {.column width="40%"}
+### Cas d'usage
+
+- Collections de musées (Rijksmuseum…)
+- Corpus iconographiques
+- Archives photographiques
+
+::: {.callout-tip appearance="simple"}
+**Pour LILAC** : explorer des corpus d'images liées à des aires culturelles ou des périodes historiques.
+:::
+:::
+:::
+
+---
+
+## Chromobase
+
+> La base de données du projet ERC **CHROMOTOPE** — l'impact culturel des nouvelles couleurs apparues dans l'Europe industrielle du XIXe siècle.
+
+::: {.columns}
+::: {.column width="60%"}
+### Le projet
+
+- **ERC CHROMOTOPE** : France, Grande-Bretagne, Allemagne, 1850–1900
+- Objet hybride : **articles scientifiques + base de données**
+- Approche **narrative des données** : chaque article relie des notices (*people, objects, organisations, techniques, colour names, events*)
+- Roue chromatique interactive inspirée des cercles de Chevreul (1864)
+
+### Techniquement
+
+- CMS statique **Keystone.js** (OuestWare) — faible empreinte serveur
+- Templates HTML/CSS : Julie Blanc
+- Hébergé sur l'infrastructure **Huma-Num**
+
+:::
+::: {.column width="40%"}
+### Ce que ce projet illustre
+
+::: {.callout-note appearance="simple"}
+- **Données structurées** au service d'une question de recherche
+- **Publication augmentée** : entre article et base de données
+- Collaboration chercheur·ses · designer · développeur·ses
+- Données et site en **accès libre** *(FAIR : Accessible + Reusable)*
+:::
+
+{{< bi link-45deg >}} [chromobase.huma-num.fr](https://chromobase.huma-num.fr/)
+:::
+:::
+
+---
+
+## Gallicagram 
+
+> Visualiser l'évolution de l'usage des mots dans le temps — **lexicométrie sur données ouvertes**.
+
+::: {.columns}
+::: {.column width="60%"}
+### Présentation
+
+- Fouille les corpus numérisés de **Gallica** (BnF), *Le Monde*, Persée… en 5 langues
+- Résolution **mensuelle** pour la presse — idéal pour étudier les événements
+- Open source · données en accès libre · corpus vérifiables
+
+### Ce qu'on peut faire
+
+- Tracer la courbe de fréquence d'un mot ou syntagme du XVII^e^ s. à aujourd'hui
+- Comparer plusieurs termes ou langues
+- Cliquer sur un point → accès direct aux textes sources dans Gallica
+
+{{< bi link-45deg >}} [gallicagram.com](https://www.gallicagram.com)
+:::
+::: {.column width="40%"}
+### Vs. Google Ngram Viewer
+
+::: {.callout-note appearance="simple"}
+| | Ngram | Gallicagram |
+|---|---|---|
+| Corpus | Opaque | **Transparent** |
+| Sources | Google Books | **Gallica + presse** |
+| Résolution | Annuelle | **Mensuelle** |
+| Accès textes | ❌ | **✅** |
+| Données | Fermées | **FAIR / ouvertes** |
+:::
+
+**Pour LILAC** : histoire de la langue, circulation des idées, études de presse.
+:::
+:::
+
+---
+
+## Hyperbase Web {.smaller}
+
+> Une plateforme d'**analyse de données textuelles** (ADT) — statistique et exploration de corpus littéraires, linguistiques, historiques.
+
+::: {.columns}
+::: {.column width="60%"}
+### Présentation
+
+- Développé depuis **1989** par Étienne Brunet ; version web maintenue par **Laurent Vanni** (UMR 7320 BCL, Université Côte d'Azur / CNRS)
+- Partenaires : **CORLI** (Huma-Num), ORTOLANG, LASLA
+- Intègre des algorithmes de **deep learning** (depuis 2018)
+
+### Analyses disponibles
+
+- **Concordance** et moteur de recherche (formes, lemmes, codes grammaticaux)
+- **Spécificités statistiques** — mots caractéristiques d'un texte vs. le corpus
+- **Cooccurrences** et associations privilégiées
+- **AFC** (Analyse Factorielle des Correspondances) & **analyse arborée**
+- Distance intertextuelle
+
+{{< bi link-45deg >}} [hyperbase.unice.fr](https://hyperbase.unice.fr) · DOI : [10.4000/corpus.8770](https://doi.org/10.4000/corpus.8770)
+:::
+::: {.column width="40%"}
+### En pratique
+
+- Chargez vos fichiers `.txt / .docx / .pdf` → base créée automatiquement
+- Bibliothèque de corpus de référence disponible (littérature française, latin…)
+- Partage de bases possible
+
+::: {.callout-tip appearance="simple"}
+**Pour LILAC** : analyse stylistique, comparaison d'auteurs, étude de genres, corpus multilingues (fr, en, es, de, it, pt, latin).
+:::
+:::
+:::
+
+---
+
+## Stylo
+
+> Un **éditeur de texte sémantique** pour les auteur·rices en SHS.
+
+::: {.columns}
+::: {.column width="60%"}
+### Présentation
+
+- Développé par la **Chaire sur les écritures numériques** (Montréal) & Huma-Num
+- Interface web, open source
+- Séparation contenu / forme / métadonnées
+
+### Le principe
+
+```
+Markdown    →  Texte enrichi
+BibTeX      →  Références bibliographiques
+YAML        →  Métadonnées (auteur, mots-clés…)
+```
+
+→ Exports : **HTML, PDF, LaTeX, XML-TEI, DOCX**
+
+{{< bi link-45deg >}} [stylo.huma-num.fr](https://stylo.huma-num.fr)
+:::
+::: {.column width="40%"}
+### Stylo incarne tout ce qu'on a vu
+
+::: {.callout-important appearance="simple"}
+{{< bi check-circle-fill >}} Formats **texte/ouverts**
+
+{{< bi check-circle-fill >}} Séparation **fond/forme**
+
+{{< bi check-circle-fill >}} **Interopérabilité** (export multiple)
+
+{{< bi check-circle-fill >}} Gestion des **références** (Zotero intégré)
+
+{{< bi check-circle-fill >}} Travail **collaboratif**
+:::
+:::
+:::
+
+# Synthèse & discussion {background-color="#2297D4"}
+
+---
+
+## Ce qu'on a vu aujourd'hui
+
+::: {.columns}
+::: {.column width="50%"}
+### Culture numérique
+
+- Les formats conditionnent la **pérennité** et l'**accessibilité**
+- Le web repose sur des **standards ouverts** (W3C)
+- Le web sémantique permet de **lier et contextualiser** les données
+- Les **PID** sont essentiels pour la science ouverte
+- Les principes **FAIR** offrent un cadre commun pour tout cela
+
+:::
+::: {.column width="50%"}
+### Humanités numériques
+
+- **Huma-Num** offre une infrastructure nationale au service des SHS
+- Les **consortiums** mutualisent bonnes pratiques et outils
+- Des projets concrets montrent comment ces principes s'appliquent
+
+:::
+:::
+
+::: {.callout-note appearance="simple"}
+### Questions à explorer
+Quels types de données produirez-vous ? Quels outils mobiliser ? Comment assurer la pérennité de vos corpus ?
+:::
+
+---
+
+## Pour aller plus loin
+
+::: {.columns}
+::: {.column width="50%"}
+### Ressources
+
+- {{< bi globe2 >}} [huma-num.fr](https://www.huma-num.fr)
+- {{< bi cart >}} [marketplace.sshopencloud.eu](https://marketplace.sshopencloud.eu)
+- {{< bi book >}} [programminghistorian.org/fr](https://programminghistorian.org/fr)
+- {{< bi pencil >}} [stylo.huma-num.fr](https://stylo.huma-num.fr)
+- {{< bi server >}} [nakala.fr](https://nakala.fr)
+- {{< bi arrow-repeat >}} [go-fair.org/fair-principles](https://www.go-fair.org/fair-principles/)
+
+### Lectures
+
+- Berra, A. (2015). *Faire des humanités numériques*
+- Schreibman, S. et al. *A Companion to Digital Humanities*
+- Wilkinson et al. (2016). *The FAIR Guiding Principles*, *Scientific Data*
+:::
+::: {.column width="50%"}
+### Compétences à acquérir
+
+::: {.callout-tip appearance="simple"}
+1. Apprendre **Markdown** (30 min)
+2. Créer un profil **ORCID**
+3. Explorer l'**SSH Open Marketplace**
+4. Tester **Stylo** ou **Nakala**
+5. Comprendre les bases du **RGPD en recherche**
+:::
+
+### Contact
+
+{{< bi envelope >}} votre.email@univ-pau.fr  
+{{< bi person-badge >}} orcid.org/votre-orcid
+:::
+:::
+
+---
+
+## <!-- -->
+
+::: {style="text-align:center; font-size:1.8em; margin-top:1.5rem;"}
+Merci !
+:::
+
+::: {style="text-align:center; margin-top:2rem; line-height:2;"}
+**Julien Rabaud**  
+UPPA · *Service Commun de la Documentation* & *Pôle Numérique*
+
+{{< bi envelope >}} [julien.rabaud@univ-pau.fr](mailto:julien.rabaud@univ-pau.fr)
+
+{{< bi linkedin >}} [linkedin.com/in/julien-rabaud](https://www.linkedin.com/in/julien-rabaud-6b037110/)
+
+{{< bi mastodon >}} [\@UjuBib\@mamot.fr](https://mamot.fr/@UjuBib)
+
+
+:::
+
+::: {style="text-align:center; font-size:0.65em; color:#888; margin-top:2rem;"}
+Présentation réalisée avec [Quarto](https://quarto.org) & [reveal.js](https://revealjs.com) · Licence CC BY 4.0
+:::
