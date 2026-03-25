@@ -279,7 +279,7 @@ Structuré, annoté
 :::
 :::
 
-> Lire [`Le cours d'Arthur Perret sur la sérialisation de données`](https://www.arthurperret.fr/cours/serialisation.html)
+> Lire le cours d'Arthur Perret sur la [`sérialisation de données`](https://www.arthurperret.fr/cours/serialisation.html)
 
 # Standards (du web) {background-color="#2297D4"}
 
