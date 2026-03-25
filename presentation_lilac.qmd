@@ -1,17 +1,20 @@
 ---
-title: "Culture numérique<br/>pour les *Humanités numériques*"
+title: "Culture numérique<br/>pour les Humanités numériques"
 subtitle: "Master 1 LILAC"
 author:
   - name: Julien Rabaud
     orcid: 0000-0002-6604-9777
     affiliations:
-      - name: "**SCD** - *Responsable Bibliothèque de Recherche Mathématiques appliquées*"
+      - name: "**SCD** - *Responsable Bibliothèque de recherche Mathématiques appliquées*"
         url: https://bibliotheques.univ-pau.fr/fr/infos-pratiques/pau/bibliotheque-de-recherche-mathematiques-appliquees-ipra.html
       - name: "**CSP Numérique Recherche** - *Gestion des données de la recherche*"
         url: https://recherche.univ-pau.fr/fr/science-ouverte/donnees-de-la-recherche.html
 date: 2026-03-24
 date-format: "D MMMM YYYY"
 lang: fr
+title-slide-attributes:
+  data-background-image: img/tumblr_nh4xeq1dpK1u5tvj5o1_r2_400.webp
+lightbox: true
 
 format:
   revealjs:
@@ -59,16 +62,17 @@ format:
 
 ### Postes
 
-- **Responsable de la bibliothèque de mathématique** — UPPA, depuis fin 2024
-- **Service d'appui à la recherche** — UPPA, 2017–2024
-- [Mon CV](https://uju-export.netlify.app/cv/cv-2026-crplm) (*Markdown-Pandoc-CSSprint*)
+- Responsable de la **Bibliothèque de recherche Mathématiques appliquées** — UPPA, fin 2024 -> 
+- SCD - **Service d'appui à la recherche** — UPPA, 2017–2024
+- **Bibliothèque patrimoniale** - Collège de France, 2005-2017
+- [`Mon CV détaillé`](https://uju-export.netlify.app/cv/cv-2026-crplm) (*Markdown-Pandoc-CSSprint*)
 :::
 ::: {.column width="40%"}
 
 ::: {.callout-note appearance="simple"}
 ### Aujourd'hui
 
-2h sur la **culture numérique** et les infrastructures de la recherche en SHS.
+2h sur la **culture numérique** et les infrastructures de recherche en SHS.
 
 N'hésitez pas à poser vos questions au fil de la séance !
 :::
@@ -82,14 +86,14 @@ N'hésitez pas à poser vos questions au fil de la séance !
 
 ::: {.columns}
 ::: {.column width="50%"}
-**Culture numérique**
+### Culture numérique
 
 1. Formats
 2. Standards
 3. Web sémantique
 :::
 ::: {.column width="50%"}
-**IR\* Huma-Num & projets HN**
+### IR\* Huma-Num & projets HN
 
 4. Huma-Num — consortiums & services
 5. Quelques projets (*Vikus Viewer*, *Chromobase*, *Gallicagram*, *Hyperbase*, *Stylo*...)
@@ -119,35 +123,35 @@ Chaque choix technique a des **implications épistémologiques**, **politiques**
 *(Findable · Accessible · Interoperable · Reusable)*
 :::
 
-- Christophe Masutti : [Guide pratique d’artisanat numérique à l’Université](https://libruniv-c29483.frama.io/)
+> Christophe Masutti : [`Guide pratique d’artisanat numérique à l’Université`](https://libruniv-c29483.frama.io/)
 
----
+# Contexte : Les principes ***FAIR*** {background-color="#2297D4"}
 
-## Les principes ***FAIR***
+[`<https://www.go-fair.org/fair-principles/>`](https://www.go-fair.org/fair-principles/)
 
 ---
 
 ## Le cycle des données numériques
 
-![Source: [Callisto](https://callisto-formation.fr/course/section.php?id=4642)](img/data-lifecycle.png){width=70%}
+![Source: [`Callisto`](https://callisto-formation.fr/course/section.php?id=4642)](img/data-lifecycle.png){width=60%}
 
 ---
 
-## FAIR / OPEN
+## FAIR // OPEN
 
-![Image source : [Consortium of European Social Science Data Archives](https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR) (CESSDA)](/img/FAIR-OPEN.webp)
-
----
-
-## FAIR / CARE
-
-![Image source : [Consortium of European Social Science Data Archives](https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR) (CESSDA)](img/FAIR-CARE.webp)
+![Image source : [`Consortium of European Social Science Data Archives`](https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR) (CESSDA)](/img/FAIR-OPEN.webp){width=60%}
 
 ---
 
-## CARE
+## FAIR + CARE
 
-The CARE principles for Indigenous Data Governance (Collective benefit, Authority to control, Responsibility, and Ethics) specifically concern Indigenous data and govern the control and (re)use of such data under the principles of open science (Carroll et al. 2020). For instance, the **Collective Benefit** principle states that data ecosystems should be designed and function in ways that enable Indigenous Peoples to derive benefit from the data, e.g. for improved government and citizen engagement. The CARE principles are complementary to the FAIR principles, under the motto ‘be FAIR and CARE’ (Carroll et al. 2020).
+![Image source : [`Consortium of European Social Science Data Archives`](https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR) (CESSDA)](img/FAIR-CARE.webp){width=60%}
+
+---
+
+## CARE Principles for Indigenous Data Governance 
+
+> The CARE principles for Indigenous Data Governance (**C**ollective benefit, **A**uthority to control, **R**esponsibility, and **E**thics) specifically concern Indigenous data and govern the control and (re)use of such data under the principles of open science ([Carroll et al. 2020](https://doi.org/10.5334/dsj-2020-043)). For instance, the **Collective Benefit** principle states that data ecosystems should be designed and function in ways that enable Indigenous Peoples to derive benefit from the data, e.g. for improved government and citizen engagement. The CARE principles are complementary to the FAIR principles, under the motto ‘be FAIR and CARE’ ([Carroll et al. 2020](https://doi.org/10.5334/dsj-2020-043)).
 
 # Formats {background-color="#2297D4"}
 
@@ -190,7 +194,7 @@ PK\x03\x04\x14\x00\x00\x00\x08\x00
 :::
 :::
 
-> - Cours d'Arthur Perret : [Format texte](https://www.arthurperret.fr/cours/format-texte.html) · [Markdown](https://www.arthurperret.fr/cours/markdown.html) · [Pandoc](https://www.arthurperret.fr/cours/pandoc.html) · [écriture scientifique au format texte](https://www.arthurperret.fr/cours/ecriture-scientifique-format-texte.html)
+> Cours d'Arthur Perret : [`Format texte`](https://www.arthurperret.fr/cours/format-texte.html) · [`Markdown`](https://www.arthurperret.fr/cours/markdown.html) · [`Pandoc`](https://www.arthurperret.fr/cours/pandoc.html) · [`écriture scientifique au format texte`](https://www.arthurperret.fr/cours/ecriture-scientifique-format-texte.html)
 
 ::: {.callout-tip appearance="simple"}
 **Bonne pratique** : travailler en format texte, exporter en binaire pour la diffusion.
@@ -272,7 +276,7 @@ Structuré, annoté
 :::
 :::
 
-> [Le cours d'Arthur Perret sur la sérialisation de données](https://www.arthurperret.fr/cours/serialisation.html)
+> Lire [`Le cours d'Arthur Perret sur la sérialisation de données`](https://www.arthurperret.fr/cours/serialisation.html)
 
 # Standards (du web) {background-color="#2297D4"}
 
@@ -326,7 +330,7 @@ document.querySelector('h1')
 :::
 
 ::: {.callout-note appearance="simple"}
-Ces trois langages forment le **socle du web**. Ils sont standardisés par le [W3C](https://www.w3.org/).
+Ces trois langages forment le **socle du web**. Ils sont standardisés par le [`W3C`](https://www.w3.org/).
 :::
 
 ---
@@ -388,7 +392,7 @@ Toute collecte de données sur des **personnes identifiables** nécessite\ :
 - Une base légale (consentement, intérêt public…)
 - Information des personnes concernées
 - Souvent un avis du **comité d'éthique** / déclaration **CNIL**
-- [{{< bi check-circle-fill >}} Données à caractère personnel à l'UPPA](https://organisation.univ-pau.fr/fr/mentions-legales/donnees-personnelles.html)
+- {{< bi check-circle-fill >}} [`Données à caractère personnel à l'UPPA`](https://organisation.univ-pau.fr/fr/mentions-legales/donnees-personnelles.html)
 :::
 :::
 :::
@@ -542,19 +546,17 @@ Ces identifiants sont les **briques de base** de la science ouverte et du web s�
 - Sous tutelle CNRS · EHESS · Aix-Marseille Université
 - Nœud français de **DARIAH** (réseau européen)
 - Interconnectée avec **CLARIN** (linguistique)
-
-### Mission
-> Faciliter la production, le traitement, la préservation et la diffusion des données numériques en SHS.
 :::
-::: {.column width="40%"}
-::: {.callout-note appearance="simple"}
-### Chiffres clés
-- **60+** consortiums et réseaux
-- **100+** outils et services
-- Des milliers de chercheur·ses utilisateurs
 
-Tous les services sont conçus pour produire des données **FAIR**.
-{{< bi link-45deg >}} [go-fair.org/fair-principles](https://www.go-fair.org/fair-principles/)
+::: {.column width="40%"}
+### Mission
+
+> Faciliter la production, le traitement, la préservation et la diffusion des données numériques en SHS.
+
+::: {.callout-note appearance="simple"}
+Tous les services sont conçus pour produire des données **FAIR**.  
+
+{{< bi link-45deg >}} [`go-fair.org/fair-principles`](https://www.go-fair.org/fair-principles/)
 :::
 :::
 :::
@@ -567,14 +569,14 @@ Tous les services sont conçus pour produire des données **FAIR**.
 
 ::: {.columns}
 ::: {.column width="55%"}
-### Consortiums actifs (sélection)
+### Les 9 consortiums actifs en 2026
 
 | Consortium | Domaine |
 |---|---|
-| **pictorIA** | Corpus visuels & IA (computer vision) |
+| **pictorIA** | Corpus visuels & IA (*computer vision*) |
 | **ARIANE** | IA & éditions savantes numériques |
 | **CORLI 2** | Corpus de langue (oral, écrit, multimodal) |
-| **MASAplus** | Données archéologiques & LOD |
+| **MASAplus** | Données archéologiques & web sémantique |
 | **DISTAM** | Études orientales, africaines & asiatiques |
 | **CANEVAS** | Annotation & archivage vidéo |
 | **MUSICA 2** | Encodage et interopérabilité musicale |
@@ -593,7 +595,7 @@ Tous les services sont conçus pour produire des données **FAIR**.
 ::: {.callout-tip appearance="simple"}
 Maximum **12 consortiums actifs** simultanément · labellisés pour 4 ans.
 
-{{< bi link-45deg >}} [huma-num.fr/les-consortiums-hn](https://www.huma-num.fr/les-consortiums-hn/)
+{{< bi link-45deg >}} [`huma-num.fr/les-consortiums-hn`](https://www.huma-num.fr/les-consortiums-hn/)
 :::
 :::
 :::
@@ -603,7 +605,7 @@ Maximum **12 consortiums actifs** simultanément · labellisés pour 4 ans.
 ## Les services Huma-Num
 
 ::: {.callout-note appearance="simple"}
-Tous les services sont documentés sur {{< bi book-open >}} [documentation.huma-num.fr](https://documentation.huma-num.fr) · Accès centralisé via **HumanID** : [humanid.huma-num.fr](https://humanid.huma-num.fr)
+Tous les services sont documentés sur {{< bi book-open >}} [`documentation.huma-num.fr`](https://documentation.huma-num.fr) · Accès centralisé via **HumanID** : [`humanid.huma-num.fr`](https://humanid.huma-num.fr)
 :::
 
 ::: {.columns}
@@ -655,7 +657,8 @@ Tous les services sont documentés sur {{< bi book-open >}} [documentation.huma-
 - **Formations** : tutoriels, écoles d'été, MOOC
 
 ### Accès
-{{< bi link-45deg >}} [marketplace.sshopencloud.eu](https://marketplace.sshopencloud.eu)
+
+> {{< bi link-45deg >}} [`marketplace.sshopencloud.eu`](https://marketplace.sshopencloud.eu)
 
 Géré par **SSHOC** (H2020), intégré à DARIAH/CLARIN.
 :::
@@ -664,7 +667,7 @@ Géré par **SSHOC** (H2020), intégré à DARIAH/CLARIN.
 ### Pour vous
 C'est **le premier endroit à consulter** lorsque vous cherchez un outil pour un projet de recherche en SHS.
 
-Cherchez par : discipline · type de données · méthode.
+Cherchez par : *discipline* · *type de données* · *méthode*.
 :::
 :::
 :::
@@ -675,7 +678,9 @@ Cherchez par : discipline · type de données · méthode.
 
 ## Vikus Viewer
 
-> Exploration visuelle de **collections patrimoniales** à grande échelle.
+> Exploration visuelle de **collections patrimoniales** à grande échelle.  
+> {{< bi link-45deg >}} [`vikusviewer.fh-potsdam.de`](https://vikusviewer.fh-potsdam.de)
+
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -690,8 +695,6 @@ Les objets sont positionnés selon :
 
 - L'axe temporel (date de création)
 - Des regroupements thématiques (mots-clés, collections)
-
-{{< bi link-45deg >}} [vikusviewer.fh-potsdam.de](https://vikusviewer.fh-potsdam.de)
 :::
 ::: {.column width="40%"}
 ### Cas d'usage
@@ -738,7 +741,7 @@ Les objets sont positionnés selon :
 - Données et site en **accès libre** *(FAIR : Accessible + Reusable)*
 :::
 
-> {{< bi link-45deg >}} [chromobase.huma-num.fr](https://chromobase.huma-num.fr/)
+> {{< bi link-45deg >}} [`chromobase.huma-num.fr`](https://chromobase.huma-num.fr/)
 :::
 :::
 
@@ -775,7 +778,7 @@ Les objets sont positionnés selon :
 | Données | Fermées | **FAIR / ouvertes** |
 :::
 
-> {{< bi link-45deg >}} [gallicagram.com](https://www.gallicagram.com)
+> {{< bi link-45deg >}} [`gallicagram.com`](https://www.gallicagram.com)
 :::
 :::
 
@@ -785,7 +788,7 @@ Les objets sont positionnés selon :
 
 > Une plateforme d'**analyse de données textuelles** (ADT) — statistique et exploration de corpus littéraires, linguistiques, historiques.
 >
-> {{< bi link-45deg >}} [hyperbase.unice.fr](https://hyperbase.unice.fr) · DOI : [10.4000/corpus.8770](https://doi.org/10.4000/corpus.8770)
+> {{< bi link-45deg >}} [`hyperbase.unice.fr`](https://hyperbase.unice.fr) · DOI : [10.4000/corpus.8770](https://doi.org/10.4000/corpus.8770)
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -822,7 +825,7 @@ Les objets sont positionnés selon :
 
 > Un **éditeur de texte sémantique** pour les auteur·rices en SHS.
 >
-> {{< bi link-45deg >}} [stylo.huma-num.fr](https://stylo.huma-num.fr)
+> {{< bi link-45deg >}} [`stylo.huma-num.fr`](https://stylo.huma-num.fr)
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -899,9 +902,8 @@ Quels types de données produirez-vous ? Quels outils mobiliser ? Comment assure
 ::: {.column width="50%"}
 ### Ressources
 
-- {{< bi globe2 >}} [huma-num.fr](https://www.huma-num.fr)
+- {{< bi globe2 >}} [isidore.science](https://isidore.science/)
 - {{< bi cart >}} [marketplace.sshopencloud.eu](https://marketplace.sshopencloud.eu)
-- {{< bi book >}} [programminghistorian.org/fr](https://programminghistorian.org/fr)
 - {{< bi pencil >}} [stylo.huma-num.fr](https://stylo.huma-num.fr)
 - {{< bi server >}} [nakala.fr](https://nakala.fr)
 - {{< bi arrow-repeat >}} [go-fair.org/fair-principles](https://www.go-fair.org/fair-principles/)
@@ -921,7 +923,7 @@ Quels types de données produirez-vous ? Quels outils mobiliser ? Comment assure
 
 ---
 
-## <!-- -->
+## <!-- --> {background-image="img/tumblr_nh4xeq1dpK1u5tvj5o1_r2_400.webp"}
 
 ::: {style="text-align:center; font-size:1.8em; margin-top:1.5rem;"}
 Merci !
@@ -931,7 +933,7 @@ Merci !
 **Julien Rabaud**  
 UPPA · *Service Commun de la Documentation* & *Pôle Numérique*
 
-::: {style="text-align:center; margin-top:2rem; line-height:2;"} 
+::: {style="text-align:center; margin-top:3rem; line-height:2;"} 
 {{< bi envelope >}} [julien.rabaud@univ-pau.fr](mailto:julien.rabaud@univ-pau.fr)
 
 {{< bi linkedin >}} [linkedin.com/in/julien-rabaud](https://www.linkedin.com/in/julien-rabaud-6b037110/)

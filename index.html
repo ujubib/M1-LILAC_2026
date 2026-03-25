@@ -7,7 +7,10 @@
 <link href="presentation_lilac_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="presentation_lilac_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="presentation_lilac_files/libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="presentation_lilac_files/libs/quarto-contrib/bootstrap-icons-1.9.1/all.css" rel="stylesheet"><meta charset="utf-8">
+<link href="presentation_lilac_files/libs/quarto-contrib/bootstrap-icons-1.9.1/all.css" rel="stylesheet">
+<script src="presentation_lilac_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="presentation_lilac_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="presentation_lilac_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Julien Rabaud">
@@ -96,7 +99,7 @@
     code span.vs { color: #032f62; } /* VerbatimString */
     code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="presentation_lilac_files/libs/revealjs/dist/theme/quarto-e0b3d8a3cec9e3af6bee5ca4736b57af.css">
+  <link rel="stylesheet" href="presentation_lilac_files/libs/revealjs/dist/theme/quarto-a5929111c6aff5cd3a08e098928d37be.css">
   <link href="presentation_lilac_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="presentation_lilac_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="presentation_lilac_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -195,8 +198,8 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Culture numérique<br>pour les <em>Humanités numériques</em></h1>
+<section id="title-slide" data-background-image="img/tumblr_nh4xeq1dpK1u5tvj5o1_r2_400.webp" class="quarto-title-block center">
+  <h1 class="title">Culture numérique<br>pour les Humanités numériques</h1>
   <p class="subtitle">Master 1 LILAC</p>
 
 <div class="quarto-title-authors">
@@ -206,7 +209,7 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 </div>
         <p class="quarto-title-affiliation">
             <a href="https://bibliotheques.univ-pau.fr/fr/infos-pratiques/pau/bibliotheque-de-recherche-mathematiques-appliquees-ipra.html">
-            <strong>SCD</strong> - <em>Responsable Bibliothèque de Recherche Mathématiques appliquées</em>
+            <strong>SCD</strong> - <em>Responsable Bibliothèque de recherche Mathématiques appliquées</em>
             </a>
           </p>
         <p class="quarto-title-affiliation">
@@ -237,9 +240,10 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 </ul>
 <h3 id="postes">Postes</h3>
 <ul>
-<li><strong>Responsable de la bibliothèque de mathématique</strong> — UPPA, depuis fin 2024</li>
-<li><strong>Service d’appui à la recherche</strong> — UPPA, 2017–2024</li>
-<li><a href="https://uju-export.netlify.app/cv/cv-2026-crplm">Mon CV</a> (<em>Markdown-Pandoc-CSSprint</em>)</li>
+<li>Responsable de la <strong>Bibliothèque de recherche Mathématiques appliquées</strong> — UPPA, fin 2024 -&gt;</li>
+<li>SCD - <strong>Service d’appui à la recherche</strong> — UPPA, 2017–2024</li>
+<li><strong>Bibliothèque patrimoniale</strong> - Collège de France, 2005-2017</li>
+<li><a href="https://uju-export.netlify.app/cv/cv-2026-crplm"><code>Mon CV détaillé</code></a> (<em>Markdown-Pandoc-CSSprint</em>)</li>
 </ul>
 </div><div class="column" style="width:40%;">
 <div class="callout callout-note callout-titled callout-style-simple">
@@ -251,7 +255,7 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 <p><strong>Aujourd’hui</strong></p>
 </div>
 <div class="callout-content">
-<p>2h sur la <strong>culture numérique</strong> et les infrastructures de la recherche en SHS.</p>
+<p>2h sur la <strong>culture numérique</strong> et les infrastructures de recherche en SHS.</p>
 <p>N’hésitez pas à poser vos questions au fil de la séance !</p>
 </div>
 </div>
@@ -262,14 +266,14 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 <h2>Au programme</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Culture numérique</strong></p>
+<h3 id="culture-numérique">Culture numérique</h3>
 <ol type="1">
 <li>Formats</li>
 <li>Standards</li>
 <li>Web sémantique</li>
 </ol>
 </div><div class="column" style="width:50%;">
-<p><strong>IR* Huma-Num &amp; projets HN</strong></p>
+<h3 id="ir-huma-num-projets-hn">IR* Huma-Num &amp; projets HN</h3>
 <ol start="4" type="1">
 <li>Huma-Num — consortiums &amp; services</li>
 <li>Quelques projets (<em>Vikus Viewer</em>, <em>Chromobase</em>, <em>Gallicagram</em>, <em>Hyperbase</em>, <em>Stylo</em>…)</li>
@@ -277,7 +281,7 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 </div></div>
 </section></section>
 <section>
-<section id="culture-numérique" class="title-slide slide level1 center" data-background-color="#003D7A">
+<section id="culture-numérique-1" class="title-slide slide level1 center" data-background-color="#003D7A">
 <h1>Culture numérique</h1>
 <p><em>Pourquoi ça nous concerne ?</em></p>
 </section>
@@ -304,28 +308,47 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 </div>
 </div>
 </div>
-<ul>
-<li>Christophe Masutti : <a href="https://libruniv-c29483.frama.io/">Guide pratique d’artisanat numérique à l’Université</a></li>
-</ul>
-</section>
-<section id="les-principes-fair" class="slide level2 center">
-<h2>Les principes <strong><em>FAIR</em></strong></h2>
+<blockquote>
+<p>Christophe Masutti : <a href="https://libruniv-c29483.frama.io/"><code>Guide pratique d’artisanat numérique à l’Université</code></a></p>
+</blockquote>
+</section></section>
+<section>
+<section id="contexte-les-principes-fair" class="title-slide slide level1 center" data-background-color="#2297D4">
+<h1>Contexte : Les principes <strong><em>FAIR</em></strong></h1>
+<p><a href="https://www.go-fair.org/fair-principles/"><code>&lt;https://www.go-fair.org/fair-principles/&gt;</code></a></p>
 </section>
 <section id="le-cycle-des-données-numériques" class="slide level2 center">
 <h2>Le cycle des données numériques</h2>
-
-<img data-src="img/data-lifecycle.png" style="width:70.0%" class="r-stretch quarto-figure-center"><p class="caption">Source: <a href="https://callisto-formation.fr/course/section.php?id=4642">Callisto</a></p></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/data-lifecycle.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Source: Callisto"><img data-src="img/data-lifecycle.png" style="width:60.0%" alt="Source: Callisto"></a></p>
+<figcaption>Source: <a href="https://callisto-formation.fr/course/section.php?id=4642"><code>Callisto</code></a></figcaption>
+</figure>
+</div>
+</section>
 <section id="fair-open" class="slide level2 center">
-<h2>FAIR / OPEN</h2>
-
-<img data-src=".\img/FAIR-OPEN.webp" class="r-stretch quarto-figure-center"><p class="caption">Image source : <a href="https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR">Consortium of European Social Science Data Archives</a> (CESSDA)</p></section>
+<h2>FAIR // OPEN</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href=".\img/FAIR-OPEN.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Image source : Consortium of European Social Science Data Archives (CESSDA)"><img data-src=".\img/FAIR-OPEN.webp" style="width:60.0%" alt="Image source : Consortium of European Social Science Data Archives (CESSDA)"></a></p>
+<figcaption>Image source : <a href="https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR"><code>Consortium of European Social Science Data Archives</code></a> (CESSDA)</figcaption>
+</figure>
+</div>
+</section>
 <section id="fair-care" class="slide level2 center">
-<h2>FAIR / CARE</h2>
-
-<img data-src="img/FAIR-CARE.webp" class="r-stretch quarto-figure-center"><p class="caption">Image source : <a href="https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR">Consortium of European Social Science Data Archives</a> (CESSDA)</p></section>
-<section id="care" class="slide level2 center">
-<h2>CARE</h2>
-<p>The CARE principles for Indigenous Data Governance (Collective benefit, Authority to control, Responsibility, and Ethics) specifically concern Indigenous data and govern the control and (re)use of such data under the principles of open science (Carroll et al.&nbsp;2020). For instance, the <strong>Collective Benefit</strong> principle states that data ecosystems should be designed and function in ways that enable Indigenous Peoples to derive benefit from the data, e.g.&nbsp;for improved government and citizen engagement. The CARE principles are complementary to the FAIR principles, under the motto ‘be FAIR and CARE’ (Carroll et al.&nbsp;2020).</p>
+<h2>FAIR + CARE</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/FAIR-CARE.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Image source : Consortium of European Social Science Data Archives (CESSDA)"><img data-src="img/FAIR-CARE.webp" style="width:60.0%" alt="Image source : Consortium of European Social Science Data Archives (CESSDA)"></a></p>
+<figcaption>Image source : <a href="https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR"><code>Consortium of European Social Science Data Archives</code></a> (CESSDA)</figcaption>
+</figure>
+</div>
+</section>
+<section id="care-principles-for-indigenous-data-governance" class="slide level2 center">
+<h2>CARE Principles for Indigenous Data Governance</h2>
+<blockquote>
+<p>The CARE principles for Indigenous Data Governance (<strong>C</strong>ollective benefit, <strong>A</strong>uthority to control, <strong>R</strong>esponsibility, and <strong>E</strong>thics) specifically concern Indigenous data and govern the control and (re)use of such data under the principles of open science (<a href="https://doi.org/10.5334/dsj-2020-043">Carroll et al.&nbsp;2020</a>). For instance, the <strong>Collective Benefit</strong> principle states that data ecosystems should be designed and function in ways that enable Indigenous Peoples to derive benefit from the data, e.g.&nbsp;for improved government and citizen engagement. The CARE principles are complementary to the FAIR principles, under the motto ‘be FAIR and CARE’ (<a href="https://doi.org/10.5334/dsj-2020-043">Carroll et al.&nbsp;2020</a>).</p>
+</blockquote>
 </section></section>
 <section>
 <section id="formats" class="title-slide slide level1 center" data-background-color="#2297D4">
@@ -360,11 +383,7 @@ PK\x03\x04\x14\x00\x00\x00\x08\x00
 <p><i class="bi-exclamation-triangle-fill " style="" role="img" aria-hidden="true"></i> Dépendance applicative · moins pérennes</p>
 </div></div>
 <blockquote>
-
-<ul>
-<li>Cours d’Arthur Perret : <a href="https://www.arthurperret.fr/cours/format-texte.html">Format texte</a> · <a href="https://www.arthurperret.fr/cours/markdown.html">Markdown</a> · <a href="https://www.arthurperret.fr/cours/pandoc.html">Pandoc</a> · <a href="https://www.arthurperret.fr/cours/ecriture-scientifique-format-texte.html">écriture scientifique au format texte</a></li>
-</ul>
-
+<p>Cours d’Arthur Perret : <a href="https://www.arthurperret.fr/cours/format-texte.html"><code>Format texte</code></a> · <a href="https://www.arthurperret.fr/cours/markdown.html"><code>Markdown</code></a> · <a href="https://www.arthurperret.fr/cours/pandoc.html"><code>Pandoc</code></a> · <a href="https://www.arthurperret.fr/cours/ecriture-scientifique-format-texte.html"><code>écriture scientifique au format texte</code></a></p>
 </blockquote>
 <div class="callout callout-tip callout-style-simple">
 <div class="callout-body">
@@ -469,7 +488,7 @@ Schmidt,Hans,de
 <i class="bi-exclamation-triangle-fill " style="" role="img" aria-hidden="true"></i> Verbeux</p>
 </div></div>
 <blockquote>
-<p><a href="https://www.arthurperret.fr/cours/serialisation.html">Le cours d’Arthur Perret sur la sérialisation de données</a></p>
+<p>Lire <a href="https://www.arthurperret.fr/cours/serialisation.html"><code>Le cours d'Arthur Perret sur la sérialisation de données</code></a></p>
 </blockquote>
 </section></section>
 <section>
@@ -520,7 +539,7 @@ Schmidt,Hans,de
 <i class="callout-icon"></i>
 </div>
 <div class="callout-content">
-<p>Ces trois langages forment le <strong>socle du web</strong>. Ils sont standardisés par le <a href="https://www.w3.org/">W3C</a>.</p>
+<p>Ces trois langages forment le <strong>socle du web</strong>. Ils sont standardisés par le <a href="https://www.w3.org/"><code>W3C</code></a>.</p>
 </div>
 </div>
 </div>
@@ -588,7 +607,7 @@ Schmidt,Hans,de
 <li>Une base légale (consentement, intérêt public…)</li>
 <li>Information des personnes concernées</li>
 <li>Souvent un avis du <strong>comité d’éthique</strong> / déclaration <strong>CNIL</strong></li>
-<li><a href="https://organisation.univ-pau.fr/fr/mentions-legales/donnees-personnelles.html"><i class="bi-check-circle-fill " style="" role="img" aria-hidden="true"></i> Données à caractère personnel à l’UPPA</a></li>
+<li><i class="bi-check-circle-fill " style="" role="img" aria-hidden="true"></i> <a href="https://organisation.univ-pau.fr/fr/mentions-legales/donnees-personnelles.html"><code>Données à caractère personnel à l'UPPA</code></a></li>
 </ul>
 </div>
 </div>
@@ -779,26 +798,19 @@ ALTER :<br>
 <li>Nœud français de <strong>DARIAH</strong> (réseau européen)</li>
 <li>Interconnectée avec <strong>CLARIN</strong> (linguistique)</li>
 </ul>
+</div><div class="column" style="width:40%;">
 <h3 id="mission">Mission</h3>
 <blockquote>
 <p>Faciliter la production, le traitement, la préservation et la diffusion des données numériques en SHS.</p>
 </blockquote>
-</div><div class="column" style="width:40%;">
-<div class="callout callout-note callout-titled callout-style-simple">
+<div class="callout callout-note callout-style-simple">
 <div class="callout-body">
-<div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Chiffres clés</strong></p>
-</div>
 <div class="callout-content">
-<ul>
-<li><strong>60+</strong> consortiums et réseaux</li>
-<li><strong>100+</strong> outils et services</li>
-<li>Des milliers de chercheur·ses utilisateurs</li>
-</ul>
-<p>Tous les services sont conçus pour produire des données <strong>FAIR</strong>. <i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://www.go-fair.org/fair-principles/">go-fair.org/fair-principles</a></p>
+<p>Tous les services sont conçus pour produire des données <strong>FAIR</strong>.</p>
+<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://www.go-fair.org/fair-principles/"><code>go-fair.org/fair-principles</code></a></p>
 </div>
 </div>
 </div>
@@ -811,7 +823,7 @@ ALTER :<br>
 </blockquote>
 <div class="columns">
 <div class="column" style="width:55%;">
-<h3 id="consortiums-actifs-sélection">Consortiums actifs (sélection)</h3>
+<h3 id="les-9-consortiums-actifs-en-2026">Les 9 consortiums actifs en 2026</h3>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -822,7 +834,7 @@ ALTER :<br>
 <tbody>
 <tr class="odd">
 <td><strong>pictorIA</strong></td>
-<td>Corpus visuels &amp; IA (computer vision)</td>
+<td>Corpus visuels &amp; IA (<em>computer vision</em>)</td>
 </tr>
 <tr class="even">
 <td><strong>ARIANE</strong></td>
@@ -834,7 +846,7 @@ ALTER :<br>
 </tr>
 <tr class="even">
 <td><strong>MASAplus</strong></td>
-<td>Données archéologiques &amp; LOD</td>
+<td>Données archéologiques &amp; web sémantique</td>
 </tr>
 <tr class="odd">
 <td><strong>DISTAM</strong></td>
@@ -873,7 +885,7 @@ ALTER :<br>
 </div>
 <div class="callout-content">
 <p>Maximum <strong>12 consortiums actifs</strong> simultanément · labellisés pour 4 ans.</p>
-<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://www.huma-num.fr/les-consortiums-hn/">huma-num.fr/les-consortiums-hn</a></p>
+<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://www.huma-num.fr/les-consortiums-hn/"><code>huma-num.fr/les-consortiums-hn</code></a></p>
 </div>
 </div>
 </div>
@@ -887,7 +899,7 @@ ALTER :<br>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-content">
-<p>Tous les services sont documentés sur <i class="bi-book-open " style="" role="img" aria-hidden="true"></i> <a href="https://documentation.huma-num.fr">documentation.huma-num.fr</a> · Accès centralisé via <strong>HumanID</strong> : <a href="https://humanid.huma-num.fr">humanid.huma-num.fr</a></p>
+<p>Tous les services sont documentés sur <i class="bi-book-open " style="" role="img" aria-hidden="true"></i> <a href="https://documentation.huma-num.fr"><code>documentation.huma-num.fr</code></a> · Accès centralisé via <strong>HumanID</strong> : <a href="https://humanid.huma-num.fr"><code>humanid.huma-num.fr</code></a></p>
 </div>
 </div>
 </div>
@@ -939,7 +951,9 @@ ALTER :<br>
 <li><strong>Formations</strong> : tutoriels, écoles d’été, MOOC</li>
 </ul>
 <h3 id="accès">Accès</h3>
-<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://marketplace.sshopencloud.eu">marketplace.sshopencloud.eu</a></p>
+<blockquote>
+<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://marketplace.sshopencloud.eu"><code>marketplace.sshopencloud.eu</code></a></p>
+</blockquote>
 <p>Géré par <strong>SSHOC</strong> (H2020), intégré à DARIAH/CLARIN.</p>
 </div><div class="column" style="width:40%;">
 <div class="callout callout-tip callout-titled callout-style-simple">
@@ -952,7 +966,7 @@ ALTER :<br>
 </div>
 <div class="callout-content">
 <p>C’est <strong>le premier endroit à consulter</strong> lorsque vous cherchez un outil pour un projet de recherche en SHS.</p>
-<p>Cherchez par : discipline · type de données · méthode.</p>
+<p>Cherchez par : <em>discipline</em> · <em>type de données</em> · <em>méthode</em>.</p>
 </div>
 </div>
 </div>
@@ -966,7 +980,8 @@ ALTER :<br>
 <section id="vikus-viewer" class="slide level2 center">
 <h2>Vikus Viewer</h2>
 <blockquote>
-<p>Exploration visuelle de <strong>collections patrimoniales</strong> à grande échelle.</p>
+<p>Exploration visuelle de <strong>collections patrimoniales</strong> à grande échelle.<br>
+<i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://vikusviewer.fh-potsdam.de"><code>vikusviewer.fh-potsdam.de</code></a></p>
 </blockquote>
 <div class="columns">
 <div class="column" style="width:60%;">
@@ -982,7 +997,6 @@ ALTER :<br>
 <li>L’axe temporel (date de création)</li>
 <li>Des regroupements thématiques (mots-clés, collections)</li>
 </ul>
-<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://vikusviewer.fh-potsdam.de">vikusviewer.fh-potsdam.de</a></p>
 </div><div class="column" style="width:40%;">
 <h3 id="cas-dusage">Cas d’usage</h3>
 <ul>
@@ -1040,7 +1054,7 @@ ALTER :<br>
 </div>
 </div>
 <blockquote>
-<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://chromobase.huma-num.fr/">chromobase.huma-num.fr</a></p>
+<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://chromobase.huma-num.fr/"><code>chromobase.huma-num.fr</code></a></p>
 </blockquote>
 </div></div>
 </section>
@@ -1111,7 +1125,7 @@ ALTER :<br>
 </div>
 </div>
 <blockquote>
-<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://www.gallicagram.com">gallicagram.com</a></p>
+<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://www.gallicagram.com"><code>gallicagram.com</code></a></p>
 </blockquote>
 </div></div>
 </section>
@@ -1119,7 +1133,7 @@ ALTER :<br>
 <h2>Hyperbase Web</h2>
 <blockquote>
 <p>Une plateforme d’<strong>analyse de données textuelles</strong> (ADT) — statistique et exploration de corpus littéraires, linguistiques, historiques.</p>
-<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://hyperbase.unice.fr">hyperbase.unice.fr</a> · DOI : <a href="https://doi.org/10.4000/corpus.8770">10.4000/corpus.8770</a></p>
+<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://hyperbase.unice.fr"><code>hyperbase.unice.fr</code></a> · DOI : <a href="https://doi.org/10.4000/corpus.8770">10.4000/corpus.8770</a></p>
 </blockquote>
 <div class="columns">
 <div class="column" style="width:60%;">
@@ -1160,7 +1174,7 @@ ALTER :<br>
 <h2>Stylo</h2>
 <blockquote>
 <p>Un <strong>éditeur de texte sémantique</strong> pour les auteur·rices en SHS.</p>
-<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://stylo.huma-num.fr">stylo.huma-num.fr</a></p>
+<p><i class="bi-link-45deg " style="" role="img" aria-hidden="true"></i> <a href="https://stylo.huma-num.fr"><code>stylo.huma-num.fr</code></a></p>
 </blockquote>
 <div class="columns">
 <div class="column" style="width:60%;">
@@ -1202,7 +1216,7 @@ YAML        →  Métadonnées (auteur, mots-clés…)</code></pre>
 <h2>Ce qu’on a vu aujourd’hui</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="culture-numérique-1">Culture numérique</h3>
+<h3 id="culture-numérique-2">Culture numérique</h3>
 <ul>
 <li>Les formats conditionnent la <strong>pérennité</strong> et l’<strong>accessibilité</strong></li>
 <li>Le web repose sur des <strong>standards ouverts</strong> (W3C)</li>
@@ -1238,9 +1252,8 @@ YAML        →  Métadonnées (auteur, mots-clés…)</code></pre>
 <div class="column" style="width:50%;">
 <h3 id="ressources">Ressources</h3>
 <ul>
-<li><i class="bi-globe2 " style="" role="img" aria-hidden="true"></i> <a href="https://www.huma-num.fr">huma-num.fr</a></li>
+<li><i class="bi-globe2 " style="" role="img" aria-hidden="true"></i> <a href="https://isidore.science/">isidore.science</a></li>
 <li><i class="bi-cart " style="" role="img" aria-hidden="true"></i> <a href="https://marketplace.sshopencloud.eu">marketplace.sshopencloud.eu</a></li>
-<li><i class="bi-book " style="" role="img" aria-hidden="true"></i> <a href="https://programminghistorian.org/fr">programminghistorian.org/fr</a></li>
 <li><i class="bi-pencil " style="" role="img" aria-hidden="true"></i> <a href="https://stylo.huma-num.fr">stylo.huma-num.fr</a></li>
 <li><i class="bi-server " style="" role="img" aria-hidden="true"></i> <a href="https://nakala.fr">nakala.fr</a></li>
 <li><i class="bi-arrow-repeat " style="" role="img" aria-hidden="true"></i> <a href="https://www.go-fair.org/fair-principles/">go-fair.org/fair-principles</a></li>
@@ -1265,7 +1278,7 @@ YAML        →  Métadonnées (auteur, mots-clés…)</code></pre>
 </div>
 </div></div>
 </section>
-<section id="section" class="slide level2 center">
+<section id="section" class="slide level2 center" data-background-image="img/tumblr_nh4xeq1dpK1u5tvj5o1_r2_400.webp">
 <h2><!-- --></h2>
 <div style="text-align:center; font-size:1.8em; margin-top:1.5rem;">
 <p>Merci !</p>
@@ -1273,7 +1286,7 @@ YAML        →  Métadonnées (auteur, mots-clés…)</code></pre>
 <div style="text-align:center; margin-top:2rem; line-height:2;">
 <p><strong>Julien Rabaud</strong><br>
 UPPA · <em>Service Commun de la Documentation</em> &amp; <em>Pôle Numérique</em></p>
-<div style="text-align:center; margin-top:2rem; line-height:2;">
+<div style="text-align:center; margin-top:3rem; line-height:2;">
 <p><i class="bi-envelope " style="" role="img" aria-hidden="true"></i> <a href="mailto:julien.rabaud@univ-pau.fr">julien.rabaud@univ-pau.fr</a></p>
 <p><i class="bi-linkedin " style="" role="img" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/julien-rabaud-6b037110/">linkedin.com/in/julien-rabaud</a></p>
 <p><i class="bi-mastodon " style="" role="img" aria-hidden="true"></i> <a href="https://mamot.fr/@UjuBib">@UjuBib@mamot.fr</a></p>
@@ -1674,6 +1687,38 @@ UPPA · <em>Service Commun de la Documentation</em> &amp; <em>Pôle Numérique</
         }
       });
       </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>
