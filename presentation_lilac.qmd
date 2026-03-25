@@ -18,6 +18,9 @@ lightbox: true
 
 format:
   revealjs:
+    include-in-header:
+    - text: |
+        <link rel = "shortcut icon" href = "img\PP-Twitter-FB-Insta-MAstodon.jpg" />
     theme: [default, custom.scss]
     logo: ""
     slide-number: c/t
