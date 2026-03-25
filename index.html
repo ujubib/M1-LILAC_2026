@@ -7,7 +7,10 @@
 <link href="presentation_lilac_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="presentation_lilac_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="presentation_lilac_files/libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="presentation_lilac_files/libs/quarto-contrib/bootstrap-icons-1.9.1/all.css" rel="stylesheet"><meta charset="utf-8">
+<link href="presentation_lilac_files/libs/quarto-contrib/bootstrap-icons-1.9.1/all.css" rel="stylesheet">
+<script src="presentation_lilac_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="presentation_lilac_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="presentation_lilac_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Julien Rabaud">
@@ -96,7 +99,7 @@
     code span.vs { color: #032f62; } /* VerbatimString */
     code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="presentation_lilac_files/libs/revealjs/dist/theme/quarto-e0b3d8a3cec9e3af6bee5ca4736b57af.css">
+  <link rel="stylesheet" href="presentation_lilac_files/libs/revealjs/dist/theme/quarto-a5929111c6aff5cd3a08e098928d37be.css">
   <link href="presentation_lilac_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="presentation_lilac_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="presentation_lilac_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -195,8 +198,8 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Culture numérique<br>pour les <em>Humanités numériques</em></h1>
+<section id="title-slide" data-background-image="img/tumblr_nh4xeq1dpK1u5tvj5o1_r2_400.webp" class="quarto-title-block center">
+  <h1 class="title">Culture numérique<br>pour les Humanités numériques</h1>
   <p class="subtitle">Master 1 LILAC</p>
 
 <div class="quarto-title-authors">
@@ -237,9 +240,10 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 </ul>
 <h3 id="postes">Postes</h3>
 <ul>
-<li><strong>Responsable de la bibliothèque de mathématique</strong> — UPPA, depuis fin 2024</li>
-<li><strong>Service d’appui à la recherche</strong> — UPPA, 2017–2024</li>
-<li><a href="https://uju-export.netlify.app/cv/cv-2026-crplm">Mon CV</a> (<em>Markdown-Pandoc-CSSprint</em>)</li>
+<li>Responsable de la <strong>Bibliothèque de recherche Mathématiques appliquées</strong> — UPPA, fin 2024 -&gt;</li>
+<li>SCD - <strong>Service d’appui à la recherche</strong> — UPPA, 2017–2024</li>
+<li><strong>Bibliothèque patrimoniale</strong> - Collège de France, 2005-2017</li>
+<li><a href="https://uju-export.netlify.app/cv/cv-2026-crplm"><code>Mon CV détaillé</code></a> (<em>Markdown-Pandoc-CSSprint</em>)</li>
 </ul>
 </div><div class="column" style="width:40%;">
 <div class="callout callout-note callout-titled callout-style-simple">
@@ -251,7 +255,7 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 <p><strong>Aujourd’hui</strong></p>
 </div>
 <div class="callout-content">
-<p>2h sur la <strong>culture numérique</strong> et les infrastructures de la recherche en SHS.</p>
+<p>2h sur la <strong>culture numérique</strong> et les infrastructures de recherche en SHS.</p>
 <p>N’hésitez pas à poser vos questions au fil de la séance !</p>
 </div>
 </div>
@@ -262,14 +266,14 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 <h2>Au programme</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Culture numérique</strong></p>
+<h3 id="culture-numérique">Culture numérique</h3>
 <ol type="1">
 <li>Formats</li>
 <li>Standards</li>
 <li>Web sémantique</li>
 </ol>
 </div><div class="column" style="width:50%;">
-<p><strong>IR* Huma-Num &amp; projets HN</strong></p>
+<h3 id="ir-huma-num-projets-hn">IR* Huma-Num &amp; projets HN</h3>
 <ol start="4" type="1">
 <li>Huma-Num — consortiums &amp; services</li>
 <li>Quelques projets (<em>Vikus Viewer</em>, <em>Chromobase</em>, <em>Gallicagram</em>, <em>Hyperbase</em>, <em>Stylo</em>…)</li>
@@ -277,7 +281,7 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 </div></div>
 </section></section>
 <section>
-<section id="culture-numérique" class="title-slide slide level1 center" data-background-color="#003D7A">
+<section id="culture-numérique-1" class="title-slide slide level1 center" data-background-color="#003D7A">
 <h1>Culture numérique</h1>
 <p><em>Pourquoi ça nous concerne ?</em></p>
 </section>
@@ -305,27 +309,46 @@ Julien Rabaud <a href="https://orcid.org/0000-0002-6604-9777" class="quarto-titl
 </div>
 </div>
 <blockquote>
-<p>Christophe Masutti : <a href="https://libruniv-c29483.frama.io/">Guide pratique d’artisanat numérique à l’Université</a></p>
+<p>Christophe Masutti : <a href="https://libruniv-c29483.frama.io/"><code>Guide pratique d’artisanat numérique à l’Université</code></a></p>
 </blockquote>
-</section>
-<section id="les-principes-fair" class="slide level2 center">
-<h2>Les principes <strong><em>FAIR</em></strong></h2>
+</section></section>
+<section>
+<section id="contexte-les-principes-fair" class="title-slide slide level1 center" data-background-color="#2297D4">
+<h1>Contexte : Les principes <strong><em>FAIR</em></strong></h1>
+<p><a href="https://www.go-fair.org/fair-principles/"><code>&lt;https://www.go-fair.org/fair-principles/&gt;</code></a></p>
 </section>
 <section id="le-cycle-des-données-numériques" class="slide level2 center">
 <h2>Le cycle des données numériques</h2>
-
-<img data-src="img/data-lifecycle.png" style="width:70.0%" class="r-stretch quarto-figure-center"><p class="caption">Source: <a href="https://callisto-formation.fr/course/section.php?id=4642">Callisto</a></p></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/data-lifecycle.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Source: Callisto"><img data-src="img/data-lifecycle.png" style="width:60.0%" alt="Source: Callisto"></a></p>
+<figcaption>Source: <a href="https://callisto-formation.fr/course/section.php?id=4642"><code>Callisto</code></a></figcaption>
+</figure>
+</div>
+</section>
 <section id="fair-open" class="slide level2 center">
-<h2>FAIR / OPEN</h2>
-
-<img data-src=".\img/FAIR-OPEN.webp" class="r-stretch quarto-figure-center"><p class="caption">Image source : <a href="https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR">Consortium of European Social Science Data Archives</a> (CESSDA)</p></section>
+<h2>FAIR // OPEN</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href=".\img/FAIR-OPEN.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Image source : Consortium of European Social Science Data Archives (CESSDA)"><img data-src=".\img/FAIR-OPEN.webp" style="width:60.0%" alt="Image source : Consortium of European Social Science Data Archives (CESSDA)"></a></p>
+<figcaption>Image source : <a href="https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR"><code>Consortium of European Social Science Data Archives</code></a> (CESSDA)</figcaption>
+</figure>
+</div>
+</section>
 <section id="fair-care" class="slide level2 center">
-<h2>FAIR / CARE</h2>
-
-<img data-src="img/FAIR-CARE.webp" class="r-stretch quarto-figure-center"><p class="caption">Image source : <a href="https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR">Consortium of European Social Science Data Archives</a> (CESSDA)</p></section>
-<section id="care" class="slide level2 center">
-<h2>CARE</h2>
-<p>The CARE principles for Indigenous Data Governance (Collective benefit, Authority to control, Responsibility, and Ethics) specifically concern Indigenous data and govern the control and (re)use of such data under the principles of open science (Carroll et al.&nbsp;2020). For instance, the <strong>Collective Benefit</strong> principle states that data ecosystems should be designed and function in ways that enable Indigenous Peoples to derive benefit from the data, e.g.&nbsp;for improved government and citizen engagement. The CARE principles are complementary to the FAIR principles, under the motto ‘be FAIR and CARE’ (Carroll et al.&nbsp;2020).</p>
+<h2>FAIR + CARE</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/FAIR-CARE.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Image source : Consortium of European Social Science Data Archives (CESSDA)"><img data-src="img/FAIR-CARE.webp" style="width:60.0%" alt="Image source : Consortium of European Social Science Data Archives (CESSDA)"></a></p>
+<figcaption>Image source : <a href="https://dag.cessda.eu/Chapter-5/1-Introduction-to-FAIR"><code>Consortium of European Social Science Data Archives</code></a> (CESSDA)</figcaption>
+</figure>
+</div>
+</section>
+<section id="care-principles-for-indigenous-data-governance" class="slide level2 center">
+<h2>CARE Principles for Indigenous Data Governance</h2>
+<blockquote>
+<p>The CARE principles for Indigenous Data Governance (Collective benefit, Authority to control, Responsibility, and Ethics) specifically concern Indigenous data and govern the control and (re)use of such data under the principles of open science (<a href="https://doi.org/10.5334/dsj-2020-043">Carroll et al.&nbsp;2020</a>). For instance, the <strong>Collective Benefit</strong> principle states that data ecosystems should be designed and function in ways that enable Indigenous Peoples to derive benefit from the data, e.g.&nbsp;for improved government and citizen engagement. The CARE principles are complementary to the FAIR principles, under the motto ‘be FAIR and CARE’ (<a href="https://doi.org/10.5334/dsj-2020-043">Carroll et al.&nbsp;2020</a>).</p>
+</blockquote>
 </section></section>
 <section>
 <section id="formats" class="title-slide slide level1 center" data-background-color="#2297D4">
@@ -1191,7 +1214,7 @@ YAML        →  Métadonnées (auteur, mots-clés…)</code></pre>
 <h2>Ce qu’on a vu aujourd’hui</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="culture-numérique-1">Culture numérique</h3>
+<h3 id="culture-numérique-2">Culture numérique</h3>
 <ul>
 <li>Les formats conditionnent la <strong>pérennité</strong> et l’<strong>accessibilité</strong></li>
 <li>Le web repose sur des <strong>standards ouverts</strong> (W3C)</li>
@@ -1663,6 +1686,38 @@ UPPA · <em>Service Commun de la Documentation</em> &amp; <em>Pôle Numérique</
         }
       });
       </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>
